@@ -11,9 +11,9 @@
 
 
  fastq2vcf.py all \
---read1 ~/Pmalariae/fastq/$1_1.fastq.gz --read2 ~/Pmalariae/fastq/$1_2.fastq.gz \
+--read1 ~/Pmalariae/fastq/${1}_1.fastq.gz --read2 ~/Pmalariae/fastq/${1}_2.fastq.gz \
 --ref ~/genomes/pm/Pmalariae_fullgenome.fasta \
---prefix $1 \
+--prefix ${1} \
 --bqsr-vcf ~/Pmalariae/training_set/Pm_trainingset_nonrefmaf0.09.qual356.missing0.1.vcf.gz
 
 
