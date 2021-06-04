@@ -7,7 +7,7 @@
  # conda activate fastq2matrix
 
  # Run using
- # cat <FASTQ_PREFIX_LIST> | parallel -j 10 --bar bash pmfastq2vcf_trainingsnps.sh {}
+ # cat <FASTQ_PREFIX_LIST> | parallel -j 10 --bar bash pm_fastq2vcf.sh {}
 
 
  fastq2vcf.py all \
