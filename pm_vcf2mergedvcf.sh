@@ -1,6 +1,6 @@
 
  ### Running samples through the pipeline 
- ### STEP 2 
+ ### STEP 2a 
  ### Merging VCFs
 
  ## From vcf - merged vcf
@@ -20,3 +20,15 @@ python ~/software/fastq2matrix/scripts/merge_vcfs.py import \
     --prefix genomics_db_v2 \
     --ref ~/genomes/pm/Pmalariae_fullgenome.fasta \
     --vcf-dir ~/Pmalariae/sample_pipeline_files/
+
+
+#############################################################################################
+
+ ### Running samples through the pipeline 
+ ### STEP 2b 
+ ### Merging VCFs
+
+
+python ~/software/fastq2matrix/scripts/merge_vcfs.py genotype \
+    --prefix genomics_db_v2 \
+    --ref ~/genomes/pm/Pmalariae_fullgenome.fasta
