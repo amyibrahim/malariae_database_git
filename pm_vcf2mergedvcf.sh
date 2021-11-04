@@ -16,10 +16,10 @@
 
 
 python ~/software/fastq2matrix/scripts/merge_vcfs.py import \
-    --sample-file ~/Pmalariae/samples_toadd/fastqlist \
-    --prefix genomics_db_v2 \
+    --sample-file ~/Pmalariae/genomics_db_v3_public_samples_added/vcflist \
+    --prefix genomics_db_v3_added_pub \
     --ref ~/genomes/pm/Pmalariae_fullgenome.fasta \
-    --vcf-dir ~/Pmalariae/sample_pipeline_files/
+    --vcf-dir ~/Pmalariae/genomics_db_v3_public_samples_added/vcf
 
 
 #############################################################################################
@@ -30,5 +30,5 @@ python ~/software/fastq2matrix/scripts/merge_vcfs.py import \
 
 
 python ~/software/fastq2matrix/scripts/merge_vcfs.py genotype \
-    --prefix genomics_db_v2 \
+    --prefix genomics_db_v3_added_pub \
     --ref ~/genomes/pm/Pmalariae_fullgenome.fasta
