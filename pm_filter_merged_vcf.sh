@@ -18,8 +18,8 @@
 
 
 python ~/software/fastq2matrix/scripts/filter_merged_vcf.py \
-    --merged-file genomics_db_v2.2021_06_04.genotyped.vcf.gz \
-    --prefix Pm_db_v2.filt \
+    --merged-file genomics_db_v3_added_pub.2021_11_04.genotyped.vcf.gz \
+    --prefix Pm_db_v3.pubadded.filt \
     --ref ~/genomes/pm/Pmalariae_fullgenome.fasta \
     --bqsr-vcf ~/Pmalariae/training_set/Pm_trainingset_nonrefmaf0.09.qual356.missing0.1.vcf.gz \
     --include-region ~/genomes/pm/Pmalariae_fullgenome_bedfile.bed \
