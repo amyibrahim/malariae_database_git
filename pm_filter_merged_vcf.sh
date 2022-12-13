@@ -27,3 +27,12 @@ python ~/software/fastq2matrix/scripts/filter_merged_vcf.py \
     --missing-sample-cutoff 0.5 \
     --cutoff-mix-GT 0.8 \
     --gff-file ~/genomes/pm/Pmalariae_fullgenome.modified.gff3
+    
+    
+    
+    
+    ### Additional filtering - maf
+    
+    # want to filter for MAF and then also remove nonseg values and print to VCF, try a few different filters to test the effect
+    
+    bcftools view -q 0.01:minor --non-ref-ac-any 1 VCF_FILE.vcf.gz -O z -o OUTPUTFILENAME.vcf.gz
